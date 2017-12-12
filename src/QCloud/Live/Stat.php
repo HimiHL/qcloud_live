@@ -71,7 +71,7 @@ class Stat extends Base
 
         $body = [
             'cmd' => $this->appid,
-            'interface' => 'Get_LivePushStat',
+            'interface' => 'Get_LivePlayStat',
             't' => $this->time,
             'sign' => $sign,
             'Param.n.page_no' => $page,
@@ -99,7 +99,7 @@ class Stat extends Base
 
         $body = [
             'cmd' => $this->appid,
-            'interface' => 'Get_LivePushStat',
+            'interface' => 'Get_LivePushStatHistory',
             't' => $this->time,
             'sign' => $sign,
             'Param.n.start_time' => $start_time,
@@ -120,7 +120,7 @@ class Stat extends Base
 
         $body = [
             'cmd' => $this->appid,
-            'interface' => 'Get_LivePushStat',
+            'interface' => 'Get_LivePlayStatHistory',
             't' => $this->time,
             'sign' => $sign,
             'Param.n.start_time' => $start_time,

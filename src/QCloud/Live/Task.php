@@ -12,7 +12,7 @@ class Task extends Base
         $sign = $this->getSign();
         $body = [
             'appid' => $this->appid,
-            'interface' => 'Live_Channel_GetStatus',
+            'interface' => 'Live_Channel_SetStatus',
             't' => $this->time,
             'sign' => $sign,
             'Param.s.channel_id' => $channel_id,

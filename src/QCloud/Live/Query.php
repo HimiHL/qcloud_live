@@ -98,7 +98,7 @@ class Query extends Base
 
         $body = [
             'appid' => $this->appid,
-            'interface' => 'Live_Tape_GetFilelist',
+            'interface' => 'Live_Channel_GetChannelList',
             't' => $this->time,
             'sign' => $sign,
             'Param.n.page_no' => $page,
@@ -127,7 +127,7 @@ class Query extends Base
 
         $body = [
             'appid' => $this->appid,
-            'interface' => 'Live_Tape_GetFilelist',
+            'interface' => 'Live_Channel_GetLiveChannelList',
             't' => $this->time,
             'sign' => $sign
         ];
