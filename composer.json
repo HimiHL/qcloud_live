@@ -1,0 +1,30 @@
+{
+    "name": "himi/qcloud_live",
+    "description": "腾讯云Live直播SDK",
+    "authors": [
+        {
+            "name": "himi",
+            "email": "himi@88hao.cn"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "QCloud\\": "src/QCloud"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "QCloudTest\\": "tests/"
+        }
+    }
+}
