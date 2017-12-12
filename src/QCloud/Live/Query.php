@@ -1,5 +1,5 @@
 <?php
-namespace QCloud;
+namespace QCloud\Live;
 
 class Query extends Base
 {
