@@ -16,7 +16,7 @@ class Query extends Base
         }
         $tx_time = strtoupper(base_convert(strtotime($time), 10, 16));
         $live_code = $this->bizid . '_' . $channel_id;
-        $tx_secret = md5($this->api_key . $live_code. $tx_time);
+        $tx_secret = md5($this->push_key . $live_code. $tx_time);
         $query = '?' . http_build_query([
             'bizid' => $this->bizid,
             'txSecret' => $tx_secret,
